@@ -2,9 +2,8 @@
 // The correct way is to use an object as the argument, typically called "props" or by destructuring the named props you expect.
 
 function Block({ value, onClick}) {
-    console.log(value, onClick, 'block');
     return (
-        <div className="block" onClick={onClick}>
+        <div className="block" data-value={value} onClick={onClick}>
             {value}
         </div>
     );
